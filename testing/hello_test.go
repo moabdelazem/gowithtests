@@ -21,16 +21,16 @@ func TestHello(t *testing.T) {
 		assertCorrectAnswer(t, input, expected)
 	})
 
-	t.Run("saying hello in spanish", func(t *testing.T) {
-		input := gowithtests.Hello("Mohamed", "Spanish")
-		want := "Hola, Mohamed"
-
-		assertCorrectAnswer(t, input, want)
-	})
-
 	t.Run("saying hello in french", func(t *testing.T) {
 		input := gowithtests.Hello("Mohamed", "French")
 		expected := "Bonjour, Mohamed"
+
+		assertCorrectAnswer(t, input, expected)
+	})
+
+	t.Run("saying hello in spanish", func(t *testing.T) {
+		input := gowithtests.Hello("Mohamed", "Spanish")
+		expected := "Hola, Mohamed"
 
 		assertCorrectAnswer(t, input, expected)
 	})

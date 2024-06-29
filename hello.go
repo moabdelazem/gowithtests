@@ -8,7 +8,7 @@ const (
 
 func handlePrefix(language string) (prefix string) {
 	switch language {
-	case "Spanich":
+	case "Spanish":
 		prefix = spanishHelloPrefix
 	case "French":
 		prefix = frenchHelloPrefix
