@@ -16,7 +16,6 @@ func SumAll(numbersToSum ...[]int) []int {
 func SumAllTails(numbersToSum ...[]int) []int {
 	var totalSums []int
 	for _, numbers := range numbersToSum {
-
 		if len(numbers) == 0 {
 			totalSums = append(totalSums, 0)
 		} else {
